@@ -17,5 +17,11 @@ public class Rastrigin extends Function {
 				Math.pow(x1, 2) - 10.0d*Math.cos(2.0d*Math.PI*x1) +
 				Math.pow(x2, 2) - 10.0d*Math.cos(2.0d*Math.PI*x2);
 	}
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-5.12d,5.12d);
+	}
+
 
 }

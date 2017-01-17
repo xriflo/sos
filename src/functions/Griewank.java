@@ -17,5 +17,10 @@ public class Griewank extends Function {
 				Math.cos(x1)*Math.cos(x2/Math.sqrt(2.0d)) +
 				1;
 	}
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-600d,600d);
+	}
 
 }

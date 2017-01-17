@@ -19,5 +19,10 @@ public class ThreeHumpCamel extends Function{
 				Math.pow(x1, 6)/6d+
 				x1*x2+Math.pow(x2, 2);
 	}
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-5d,5d);
+	}
 }
 

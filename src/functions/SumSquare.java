@@ -15,5 +15,9 @@ public class SumSquare extends Function{
 		x2 = pair.x2;
 		return 1*Math.pow(x1, 2) + 2*Math.pow(x2, 2);
 	}
-
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-5.12d,5.12d);
+	}
 }

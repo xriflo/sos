@@ -25,4 +25,10 @@ public class Easom extends Function{
 	public Pair getGlobalMinimum() {
 		return new Pair(Math.PI, Math.PI);
 	}
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-100d,100d);
+	}
+
 }

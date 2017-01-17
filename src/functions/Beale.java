@@ -23,4 +23,9 @@ public class Beale extends Function{
 		return new Pair(3.0d, 0.5d);
 	}
 
+	@Override
+	public Pair getDomain() {
+		return new Pair(-4.5d,4.5d);
+	}
+
 }

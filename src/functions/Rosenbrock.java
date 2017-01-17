@@ -21,5 +21,11 @@ public class Rosenbrock extends Function{
 	public Pair getGlobalMinimum() {
 		return new Pair(1.0d, 1.0d);
 	}
+	
+	@Override
+	public Pair getDomain() {
+		return new Pair(-5d,10d);
+	}
+
 
 }

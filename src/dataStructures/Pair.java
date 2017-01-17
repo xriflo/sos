@@ -3,6 +3,11 @@ package dataStructures;
 
 public class Pair {
 	public Double x1, x2;
+	
+	public Pair(Pair other) {
+		this.x1 = other.x1;
+		this.x2 = other.x2;
+	}
 
 	public Pair(Double x1, Double x2) {
 		super();
@@ -26,6 +31,13 @@ public class Pair {
 		return new Pair(
 				this.x1+other.x1,
 				this.x2+other.x2
+				);
+	}
+	
+	public Pair add(Double ct) {
+		return new Pair(
+				this.x1+ct,
+				this.x2+ct
 				);
 	}
 	
